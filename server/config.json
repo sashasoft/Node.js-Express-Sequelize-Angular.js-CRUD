@@ -7,4 +7,12 @@
     "port": "5432",
     "dialect": "postgres"
   }
+  "prodaction": {
+    "username": "todos_dev",
+    "password": "todos_dev",
+    "database": "todos_dev",
+    "host": "127.0.0.1",
+    "port": "5432",
+    "dialect": "postgres"
+  }
 }
