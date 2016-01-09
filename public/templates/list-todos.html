@@ -1,0 +1,30 @@
+  
+  <div class="container">
+    <div class="header">
+      <a href="#/todos/new">
+        <h1 class="lead">Add a new Todo...</h1>
+      </a>
+    </div> <br>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Complete</th>
+          <th>UserID</th>
+          <th>Edit/Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="todo in todoData">
+          <td><a href="#/todos/{{todo.id}}">{{ todo.title }}</a></td>
+          <td>{{ todo.complete }}</td>
+          <td>{{ todo.UserId }}</td>
+          <td>
+            <span class="glyphicon glyphicon-pencil" ng-click="goToEdit(todo.id)"></span>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="glyphicon glyphicon-trash" ng-click="deleteTodo(todo.id)"></span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

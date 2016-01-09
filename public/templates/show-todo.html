@@ -1,0 +1,22 @@
+  <div class="container">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Complete</th>
+          <th>UserID</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{ todoData.title }}</td>
+          <td>{{ todoData.complete }}</td>
+          <td>{{ todoData.UserId }}</td>
+          <td>
+            <span class="btn btn-success" ng-click="completeTodo()">Выполнить</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

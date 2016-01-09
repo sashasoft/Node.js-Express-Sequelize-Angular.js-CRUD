@@ -1,0 +1,15 @@
+<div class="container new">
+  <div class="todo-form">
+    <form">
+      <h3 class="block">Edit Todo</h3>
+      <div class="form-group">
+        <input type="text" class="form-control input-lg" ng-model="formData.title">
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control input-lg" ng-model="formData.UserId">
+      </div>
+      <button type="submit" class="btn btn-primary btn-lg" ng-click="updateTodo()">Update</button>
+      <button type="submit" class="btn btn-danger btn-lg" ng-click="cancelUpdateTodo()">Cancel</button>
+    </form>
+  </div>
+</div>
